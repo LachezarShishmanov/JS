@@ -1,12 +1,12 @@
 // CHALLENGE 
 // Create a variable called fourthItem and assign it the value of the 
-//fourth item in the horror array ('Ghostface'). 
+//fourth item in the horror array ('GhostFace'). 
 //Then console.log fourthItem to see the output.
 
 
-// const horror = ['Freddy', 'Jason', 'Michael', 'Ghostface', 'Chucky'];
-// let fourthItem = 'Ghostface'
-// console.log(horror[3])
+//  const horror = ['Freddy', 'Jason', 'Michael', 'GhostFace', 'Chucky'];
+//  let fourthItem = 'GhostFace'
+//  console.log(horror[3])
 // Write a console.log statement below to check your work!
 
 
@@ -46,9 +46,17 @@ const greetings = [];
 // The string should have the format 'Have a [synonym] day!'
 // ADD CODE HERE
 // for (i=0; i < synonyms.length; i++){
-//     greetings.push(synonyms[1]);
-//     console.log('Have a ${synonyms[1]} day')
+//     greetings.push(synonyms[0,1,2]);
+//     console.log(`Have a ${synonyms[1]} day`)
 // }
+
+//CORRECT
+
+// for (let i = 0; i < synonyms.length; i++) {
+//     let newString = "Have a "+ synonyms[i] + " day!";
+//     greetings.push(newString);
+//     console.log(`Have a ${synonyms[i]} day`)
+//   }
 
 // 2. 
 // Loop through the greetings array, logging each greeting to 
@@ -58,10 +66,13 @@ const greetings = [];
 // 'Have a great day!'
 // ADD CODE HERE
 
-// for (i = 0; i < synonyms.length; i++){
-//     greetings.push(synonyms[1]);
-//     console.log(`Don't have a ${synonyms[1]} day`)   
-// }
+
+
+for (i = 0; i < greetings.length; i++){
+    synonyms.push(greetings[i]);
+    console.log(`Have a ${greetings[i]}day`);
+
+}
 
 //You are given an array of five numbers called increaseByTwo. 
 //Use a for loop to iterate through the array and increase each 
@@ -83,13 +94,13 @@ const greetings = [];
 // }
 // console.log(increaseByTwo)
 
-const latestShows = ['Caddyshack', 'Interstellar', 'Trading', 'Places']
+// const latestShows = ['CaddyShack', 'Interstellar', 'Trading', 'Places']
 
-latestShows.forEach((show) => { 
-    console.log(show)
-})
+// latestShows.forEach((show) => { 
+//     console.log(show)
+// })
 
-const numArr = [2, 345, 34, 12, 2334, 5, 67, 7, 45]
-numArr.forEach((num) => {
-    console.log(num*10)
-})
+// const numArr = [2, 345, 34, 12, 2334, 5, 67, 7, 45]
+// numArr.forEach((num) => {
+//     console.log(num*10)
+// })

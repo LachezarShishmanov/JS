@@ -49,22 +49,91 @@
 
 //Abraham version version 1
 
-const subtractTwo = (num) =>{
-    return num -2
-}
+// const subtractTwo = (num) =>{
+//     return num -2
+// }
 
-const recreateMap = (array, fn) => {
-    const newArray = [] 
-    for (let i = 0; i < array.length; i++){
-        const result = fn(array[i])
-        newArray.push(result)
-    }
-    return newArray
-}
+// const recreateMap = (array, fn) => {
+//     const newArray = [] 
+//     for (let i = 0; i < array.length; i++){
+//         const result = fn(array[i])
+//         newArray.push(result)
+//     }
+//     return newArray
+// }
 
 // ADD CODE HERE
 
 // Uncomment these to check your work!
-console.log(typeof subtractTwo); // should log: 'function'
-console.log(typeof recreateMap); // should log: 'function'
-console.log(recreateMap([3,4,5], subtractTwo)); // should log: [ 1, 2, 3 ]
+//console.log(typeof subtractTwo); // should log: 'function'
+//console.log(typeof recreateMap); // should log: 'function'
+//console.log(recreateMap([3,4,5], subtractTwo)); // should log: [ 1, 2, 3 ]     
+
+
+// FOREACH CHALLENGE
+// Snipped - HELP for the challenge
+
+// function clean(item) {
+//     console.log(`I just cleaned a ${item}`)
+// }
+  
+// const nails = ["rusty nail", "rusty nail", "bent nail", "clean nail"]
+  
+//   for (let i = 0; i < nails.length; i++) {
+//     clean(nails[i])
+//   }
+
+//const recreateForEach = (array, callback) => {
+    // loop over the array
+    // call the callback on each of the element inside the array
+//}
+
+// let alphabet = '';
+// const letter = ['a', 'b', 'c', 'd'];
+
+// recreateFoeEach(letter, function(char) {
+//     alphabet += char;
+// });
+
+// console.log(alphabet); //prints 'abcd'
+
+
+//Challenge
+
+// Part 1
+//Create a function recreateForEach which takes an 
+//array and a callback, and runs the callback on 
+//each element of the array. recreateForEach does 
+//not return anything. Please do not use the native 
+//forEach or map method.
+
+//Part 2
+//Now let's rebuild recreateMap from the previous 
+//challenge. This time instead of using a for loop, 
+//you're going to use the recreateForEach we just created.
+
+// Uncomment these to check your work!
+// console.log(typeof recreateForEach); // should log: 'function'
+// recreateForEach(['a','b','c'], i => console.log(i)); // should log: 'a', 'b', 'c'
+// console.log(typeof recreateMap); // should log: 'function'
+// console.log(recreateMap([3,4,5], n => n - 2)); // should log: [1, 2, 3]
+
+//const recreateForEach = (array, callback) => {
+    // const recreateForEach = (array, callback) => {
+    //     for (let i = 0; i < array.length; i++)
+    //         callback(array[i]);
+        // loop over the array
+    // call the callback on each of the element inside the array
+//}
+
+
+// let alphabet = '';
+// const letter = ['a', 'b', 'c', 'd'];
+//  recreateFoeEach(letter, function(char) {
+//     alphabet += char;
+// });
+// console.log(alphabet);
+// console.log(typeof recreateForEach);
+// recreateForEach(['a', 'b', 'c'], i=> console.log(i));    
+
+
